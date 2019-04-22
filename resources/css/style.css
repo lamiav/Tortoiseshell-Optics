@@ -22,7 +22,7 @@ header {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
 }
-  /*Navigation bar*/
+/*Navigation bar*/
 header .title {
   position: relative;
   z-index: 3;
@@ -48,6 +48,31 @@ header img {
 
 li {
   display: inline-block;
+}
+
+.mobile {
+  display: none;
+}
+/*Media Queries for Nav Bar*/
+@media only screen and (max-width: 1024px) {
+  .title.container {
+    max-width: 100%;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav.wide {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
+  .logo span {
+    display: none;
+  }
 }
 
 /*Banner*/
