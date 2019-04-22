@@ -145,7 +145,7 @@ li {
 }
 
 figure {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +166,25 @@ figure {
 
 figcaption {
   text-align: center;
+}
+/*Media Queries for Icons Container*/
+@media only screen and (max-width: 650px) {
+  .icons.container {
+    margin: 3rem auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  figure {
+    width: 100%;
+    margin: .77rem auto;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 1.54rem;
+    font-size: 0.77rem;
+  }
 }
 
 /*Description*/
@@ -198,19 +217,17 @@ h2 {
     width: 100%;
   }
 
-h2 {
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem 0;
-}
+  h2 {
+   width: 100%;
+   text-align: center;
+   padding: 0.5rem 0;
+  }
 
   p {
     font-size: 0.77rem;
     margin: 0 0.33rem;
   }
 }
-
-
 
 /*Footer*/
 footer {
