@@ -22,6 +22,21 @@ header {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
 }
+
+/*Media Queries for Header*/
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+
+  }
+}
 /*Navigation bar*/
 header .title {
   position: relative;
@@ -93,6 +108,34 @@ li {
    line-height: 1.32;
    text-transform: uppercase;
  }
+/*Media Queries for Banner*/
+@media only screen and (max-width: 1024px) {
+  .banner.container {
+    max-width: 100%;
+    margin-top: 5rem;
+    left: 0;
+  }
+
+  .headline {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .banner.container {
+    margin-top: 9rem;
+  }
+
+  .headline {
+    width: 100%;
+    margin-right: 0;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
 
 /*Icons Container*/
 .icons.container {
